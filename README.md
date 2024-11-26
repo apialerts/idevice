@@ -1,6 +1,8 @@
 # iDevice
 
-iDevice is a Kotlin library for the JVM that translates Apple device codes into their corresponding device names. This library is useful for applications that need to identify the specific model of an Apple device based on its code.
+iDevice is a simple no dependency Kotlin library for the JVM that translates Apple device codes into their corresponding device names. 
+
+It is used in the [API Alerts](https://apialerts.com) platform to determine the model name of iOS devices to show in the users' device list.
 
 ## Installation
 

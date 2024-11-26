@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.vanniktech.mavenPublish)
 }
 
-group = "com.apialerts.idevice"
+group = "com.apialerts"
 version = "0.0.1"
 
 kotlin {
@@ -24,7 +24,7 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates(group.toString(), "library", version.toString())
+    coordinates(group.toString(), "idevice", version.toString())
 
     pom {
         name = "iDevice"

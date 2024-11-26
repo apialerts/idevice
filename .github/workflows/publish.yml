@@ -5,7 +5,7 @@ on:
 
 jobs:
   publish:
-    name: Release build and publish
+    name: Build, Test and Publish
     runs-on: macOS-latest
     steps:
       - name: Check out code
@@ -16,8 +16,8 @@ jobs:
           distribution: 'zulu'
           java-version: 21
       - name: Test
-        run: ./gradlew jvmTest --no-configuration-cache
-      - name: Publish to MavenCentral
+        run: ./gradlew jvmTest
+      - name: Publish
         run: ./gradlew publishToMavenCentral --no-configuration-cache
         env:
           ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}

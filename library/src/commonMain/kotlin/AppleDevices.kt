@@ -1,4 +1,4 @@
-package com.apialerts.idevice
+package com.apialerts
 
 /**
  * Returns the name of the Apple device based on the device code.
