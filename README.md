@@ -9,13 +9,13 @@ It is used in the [API Alerts](https://apialerts.com) platform to determine the 
 Add the dependency to your Gradle toml file:
 
 ```toml
-idevice = { module = "com.apialerts:idevice", version = "0.0.2" }
+idevice = { module = "com.apialerts:idevice", version = "<version>" }
 ```
 
 or Groovy `build.gradle` file:
 
 ```groovy
-implementation 'com.apialerts:idevice:0.0.2'
+implementation 'com.apialerts:idevice:<version>'
 ```
 
 Ensure `mavenCentral()` is added to your repository list
@@ -27,6 +27,7 @@ Ensure `mavenCentral()` is added to your repository list
 Create an extension for `UIDevice` in your Swift iOS app to retrieve the device code:
 
 ```swift
+// Swift
 extension UIDevice {
     func modelName() -> String {
         var systemInfo = utsname()
@@ -45,6 +46,7 @@ extension UIDevice {
 Use the extension to get the device model code:
 
 ```swift
+// Swift
 let model = UIDevice.current.modelName()
 ```
 
@@ -53,6 +55,7 @@ let model = UIDevice.current.modelName()
 Pass the device model code to your backend running a JVM API to decode it into a real device name:
 
 ```kotlin
+// Kotlin
 import com.apialerts.idevice.appleDeviceName
 
 val model = appleDeviceName("<device code>")

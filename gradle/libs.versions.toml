@@ -1,4 +1,7 @@
 [versions]
+
+version = "1.0.0"
+
 vKotlin = "2.0.20"
 vMavenPublish = "0.29.0"
 

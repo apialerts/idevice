@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.apialerts"
-version = "0.0.1"
+version = libs.versions.version
 
 kotlin {
     jvm()
