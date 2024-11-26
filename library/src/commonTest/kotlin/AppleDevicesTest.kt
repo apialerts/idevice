@@ -1,4 +1,4 @@
-package com.apialerts
+package com.apialerts.idevice
 
 import kotlin.test.Test
 import kotlin.test.assertEquals
