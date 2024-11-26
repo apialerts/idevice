@@ -9,13 +9,13 @@ It is used in the [API Alerts](https://apialerts.com) platform to determine the 
 Add the dependency to your Gradle toml file:
 
 ```toml
-idevice = { module = "com.apialerts:idevice", version = "0.0.1" }
+idevice = { module = "com.apialerts:idevice", version = "0.0.2" }
 ```
 
 or Groovy `build.gradle` file:
 
 ```groovy
-implementation 'com.apialerts:idevice:0.0.1'
+implementation 'com.apialerts:idevice:0.0.2'
 ```
 
 Ensure `mavenCentral()` is added to your repository list
