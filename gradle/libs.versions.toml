@@ -1,9 +1,7 @@
 [versions]
 
-version = "1.0.0"
-
 vKotlin = "2.0.20"
-vMavenPublish = "0.29.0"
+vMavenPublish = "0.30.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "vKotlin" }
