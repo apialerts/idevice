@@ -53,6 +53,8 @@ let model = UIDevice.current.modelName()
 Pass the device model code to your backend running a JVM API to decode it into a real device name:
 
 ```kotlin
+import com.apialerts.idevice.appleDeviceName
+
 val model = appleDeviceName("<device code>")
 ```
 
