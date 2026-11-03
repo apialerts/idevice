@@ -32,6 +32,21 @@ class AppleDevicesTest {
     }
 
     @Test
+    fun `test iPhone 18 Pro Max`() {
+        assertEquals("iPhone 18 Pro Max", appleDeviceName("iPhone19,7"))
+    }
+
+    @Test
+    fun `test iPad Pro (13-inch) (M5)`() {
+        assertEquals("iPad Pro (13-inch) (M5)", appleDeviceName("iPad17,4"))
+    }
+
+    @Test
+    fun `test Apple Watch Series 12 46mm`() {
+        assertEquals("Apple Watch Series 12 46mm", appleDeviceName("Watch8,5"))
+    }
+
+    @Test
     fun `test Simulator`() {
         assertEquals("Simulator", appleDeviceName("x86_64"))
     }

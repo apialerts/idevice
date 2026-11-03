@@ -2,6 +2,7 @@ package com.apialerts.idevice
 
 /**
  * Returns the name of the Apple device based on the device code.
+ * Reference: https://github.com/devicekit/DeviceKit/blob/master/Source/Device.generated.swift
  * @param code The device code.
  * @return The name of the Apple device or null if the device code is not found.
  */
@@ -61,6 +62,10 @@ fun appleDeviceName(code: String): String? {
         "iPhone18,1" -> "iPhone 17 Pro"
         "iPhone18,2" -> "iPhone 17 Pro Max"
         "iPhone18,4" -> "iPhone Air"
+        "iPhone18,5" -> "iPhone 17e"
+        "iPhone19,2" -> "iPhone 18 Pro"
+        "iPhone19,3", "iPhone19,7" -> "iPhone 18 Pro Max"
+        "iPhone19,4" -> "iPhone Duo"
 
         // iPad
         "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4" -> "iPad 2"
@@ -84,6 +89,8 @@ fun appleDeviceName(code: String): String? {
         "iPad14,10", "iPad14,11" -> "iPad Air (13-inch) (M2)"
         "iPad15,3", "iPad15,4" -> "iPad Air (11-inch) (M3)"
         "iPad15,5", "iPad15,6" -> "iPad Air (13-inch) (M3)"
+        "iPad16,8", "iPad16,9" -> "iPad Air (11-inch) (M4)"
+        "iPad16,10", "iPad16,11" -> "iPad Air (13-inch) (M4)"
 
         // iPad Mini
         "iPad2,5", "iPad2,6", "iPad2,7" -> "iPad Mini"
@@ -109,6 +116,8 @@ fun appleDeviceName(code: String): String? {
         "iPad14,5", "iPad14,6" -> "iPad Pro (12.9-inch) (6th generation)"
         "iPad16,3", "iPad16,4" -> "iPad Pro (11-inch) (M4)"
         "iPad16,5", "iPad16,6" -> "iPad Pro (13-inch) (M4)"
+        "iPad17,1", "iPad17,2" -> "iPad Pro (11-inch) (M5)"
+        "iPad17,3", "iPad17,4" -> "iPad Pro (13-inch) (M5)"
 
         // HomePod
         "AudioAccessory1,1" -> "HomePod"
@@ -144,14 +153,19 @@ fun appleDeviceName(code: String): String? {
         "Watch6,14", "Watch6,16" -> "Apple Watch Series 8 41mm"
         "Watch6,15", "Watch6,17" -> "Apple Watch Series 8 45mm"
         "Watch6,18" -> "Apple Watch Ultra"
-        "Watch7,3" -> "Apple Watch Series 9 41mm"
-        "Watch7,4" -> "Apple Watch Series 9 45mm"
+        "Watch7,1", "Watch7,3" -> "Apple Watch Series 9 41mm"
+        "Watch7,2", "Watch7,4" -> "Apple Watch Series 9 45mm"
         "Watch7,5" -> "Apple Watch Ultra2"
+        "Watch7,13", "Watch7,14" -> "Apple Watch SE (3rd generation) 40mm"
+        "Watch7,15", "Watch7,16" -> "Apple Watch SE (3rd generation) 44mm"
         "Watch7,8", "Watch7,10" -> "Apple Watch Series 10 42mm"
         "Watch7,9", "Watch7,11" -> "Apple Watch Series 10 46mm"
         "Watch7,12" -> "Apple Watch Ultra 3"
         "Watch7,17", "Watch7,19" -> "Apple Watch Series 11 42mm"
         "Watch7,18", "Watch7,20" -> "Apple Watch Series 11 46mm"
+        "Watch8,1" -> "Apple Watch Ultra 4"
+        "Watch8,2", "Watch8,4" -> "Apple Watch Series 12 42mm"
+        "Watch8,3", "Watch8,5" -> "Apple Watch Series 12 46mm"
 
         // Simulators
         "i386", "x86_64", "arm64" -> "Simulator"
